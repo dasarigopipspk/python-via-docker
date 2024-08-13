@@ -10,8 +10,6 @@ CMD ["app.py"]
     ls
 
     cd docker_python_flask-project/
-     docker build -t mayuri
-     docker images
      docker build -t mayuri .
      docker images
      docker run -dt -p 5002:5000 mayuri 
