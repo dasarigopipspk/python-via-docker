@@ -1,13 +1,12 @@
 yum install python3
-vi DockerfileFROM python:3.6
+vi Dockerfile
+FROM python:3.6
 MAINTAINER veera "veera.narni232@gmail.com"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
 CMD ["app.py"]
-
-    ls
 
     cd docker_python_flask-project/
      docker build -t mayuri .
