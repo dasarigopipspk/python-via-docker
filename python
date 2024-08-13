@@ -1,0 +1,11 @@
+yum install python3
+   55  vi Dockerfile
+   56  ls
+   57  cd d
+   58  cd docker_python_flask-project/
+   59  docker build -t mayuri
+   60  docker images
+   61  docker build -t mayuri .
+   62  docker images
+   63  docker run -dt -p 5002:5000 mayuri 
+   64  docker ps
